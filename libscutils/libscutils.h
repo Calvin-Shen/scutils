@@ -6,7 +6,7 @@
 //  Copyright © 2018 沈宸. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+
 
 //! Project version number for libscutils.
 FOUNDATION_EXPORT double libscutilsVersionNumber;

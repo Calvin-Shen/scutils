@@ -10,6 +10,15 @@
 		3E2EF83021B8C4EF00CA85ED /* libscutils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E2EF82621B8C4EF00CA85ED /* libscutils.framework */; };
 		3E2EF83521B8C4EF00CA85ED /* libscutilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2EF83421B8C4EF00CA85ED /* libscutilsTests.m */; };
 		3E2EF83721B8C4EF00CA85ED /* libscutils.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2EF82921B8C4EF00CA85ED /* libscutils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E2EF84221B8C53E00CA85ED /* SCUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2EF84021B8C53E00CA85ED /* SCUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E2EF84321B8C53E00CA85ED /* SCUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2EF84121B8C53E00CA85ED /* SCUtility.m */; };
+		3E2EF84521B8C77C00CA85ED /* SCCommonMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2EF84421B8C77C00CA85ED /* SCCommonMacros.h */; };
+		3E8B93BC21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8B93BA21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h */; };
+		3E8B93BD21B8F5FA00673862 /* NSTimer+SCUnretainTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B93BB21B8F5FA00673862 /* NSTimer+SCUnretainTimer.m */; };
+		3E8B93C021B8F9CC00673862 /* UIAlertController+TapGestureAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8B93BE21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.h */; };
+		3E8B93C121B8F9CC00673862 /* UIAlertController+TapGestureAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B93BF21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.m */; };
+		3E8B93C421B8FB7800673862 /* UIScrollView+UITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B93C221B8FB7800673862 /* UIScrollView+UITouch.m */; };
+		3E8B93C521B8FB7800673862 /* UIScrollView+UITouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8B93C321B8FB7800673862 /* UIScrollView+UITouch.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,16 @@
 		3E2EF82F21B8C4EF00CA85ED /* libscutilsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libscutilsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E2EF83421B8C4EF00CA85ED /* libscutilsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libscutilsTests.m; sourceTree = "<group>"; };
 		3E2EF83621B8C4EF00CA85ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E2EF84021B8C53E00CA85ED /* SCUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCUtility.h; sourceTree = "<group>"; };
+		3E2EF84121B8C53E00CA85ED /* SCUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCUtility.m; sourceTree = "<group>"; };
+		3E2EF84421B8C77C00CA85ED /* SCCommonMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCCommonMacros.h; sourceTree = "<group>"; };
+		3E2EF84621B8D0E200CA85ED /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3E8B93BA21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+SCUnretainTimer.h"; sourceTree = "<group>"; };
+		3E8B93BB21B8F5FA00673862 /* NSTimer+SCUnretainTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+SCUnretainTimer.m"; sourceTree = "<group>"; };
+		3E8B93BE21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+TapGestureAlertController.h"; sourceTree = "<group>"; };
+		3E8B93BF21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+TapGestureAlertController.m"; sourceTree = "<group>"; };
+		3E8B93C221B8FB7800673862 /* UIScrollView+UITouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+UITouch.m"; sourceTree = "<group>"; };
+		3E8B93C321B8FB7800673862 /* UIScrollView+UITouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+UITouch.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +90,17 @@
 		3E2EF82821B8C4EF00CA85ED /* libscutils */ = {
 			isa = PBXGroup;
 			children = (
+				3E2EF84621B8D0E200CA85ED /* PrefixHeader.pch */,
 				3E2EF82921B8C4EF00CA85ED /* libscutils.h */,
+				3E2EF84421B8C77C00CA85ED /* SCCommonMacros.h */,
+				3E2EF84021B8C53E00CA85ED /* SCUtility.h */,
+				3E2EF84121B8C53E00CA85ED /* SCUtility.m */,
+				3E8B93BA21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h */,
+				3E8B93BB21B8F5FA00673862 /* NSTimer+SCUnretainTimer.m */,
+				3E8B93BE21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.h */,
+				3E8B93BF21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.m */,
+				3E8B93C321B8FB7800673862 /* UIScrollView+UITouch.h */,
+				3E8B93C221B8FB7800673862 /* UIScrollView+UITouch.m */,
 				3E2EF82A21B8C4EF00CA85ED /* Info.plist */,
 			);
 			path = libscutils;
@@ -93,7 +122,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8B93C021B8F9CC00673862 /* UIAlertController+TapGestureAlertController.h in Headers */,
 				3E2EF83721B8C4EF00CA85ED /* libscutils.h in Headers */,
+				3E8B93BC21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h in Headers */,
+				3E2EF84221B8C53E00CA85ED /* SCUtility.h in Headers */,
+				3E8B93C521B8FB7800673862 /* UIScrollView+UITouch.h in Headers */,
+				3E2EF84521B8C77C00CA85ED /* SCCommonMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8B93C121B8F9CC00673862 /* UIAlertController+TapGestureAlertController.m in Sources */,
+				3E8B93C421B8FB7800673862 /* UIScrollView+UITouch.m in Sources */,
+				3E8B93BD21B8F5FA00673862 /* NSTimer+SCUnretainTimer.m in Sources */,
+				3E2EF84321B8C53E00CA85ED /* SCUtility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +381,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = libscutils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -350,6 +390,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kunsound.www.libscutils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -367,6 +409,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = libscutils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -374,6 +418,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kunsound.www.libscutils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
