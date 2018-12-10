@@ -10,5 +10,5 @@
 #define PrefixHeader_pch
 
 #import <UIKit/UIKit.h>
-
+#import "SCCommonMacros.h"
 #endif /* PrefixHeader_pch */

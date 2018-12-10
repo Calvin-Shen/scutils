@@ -10,10 +10,12 @@
 
 @interface NSTimer (SCUnretainTimer)
 /**
- @brief 创建一个不使用target模式的timer，不会导致循环引用
+ 创建一个不使用target模式的timer，不会导致循环引用
+ 
  @param interval 以s计算
  @param repeats 是否循环
  @param block 希望循环执行的内容
+ @return 定时器对象
  */
 + (NSTimer *)sc_scheduledTimerWithInterval:(NSTimeInterval)interval repeats:(BOOL)repeats block:(void (^)(NSTimer *timer))block;
 @end

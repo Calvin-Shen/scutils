@@ -53,7 +53,7 @@
  弱引用、强引用
  */
 #define SCWeakSelf(type)    __weak typeof(type) weak##type = type;
-#define SCStrongSelf(type)  __strong typeof(type) strong##type = type;
+#define SCStrongSelf(type)  __strong typeof(type) strong##self = type;
 
 /**
  获取系统版本
