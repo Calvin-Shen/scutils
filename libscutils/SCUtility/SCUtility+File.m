@@ -35,4 +35,18 @@
         return [NSString stringWithFormat:@"%.2fG",aFloat];
     }
 }
+
+- (NSString *)createRandomFileAtPath:(NSString *)directoryPath prefix:(NSString *)prefix fileType:(NSString *)fileType;{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    BOOL isDir;
+    if([fileManager fileExistsAtPath:directoryPath isDirectory:&isDir] && isDir){
+        NSString *fileName = [[prefix stringByAppendingString:@"-XXXXXX"] stringByAppendingPathExtension:fileType];
+        NSString *tempFileTemplate = [directoryPath
+                                      stringByAppendingPathComponent:fileName];
+        int fileDescriptor = mkstemps(tempFileTemplate.UTF8String, 4);
+        return tempFileTemplate;
+    }else{
+        return nil;
+    }
+}
 @end

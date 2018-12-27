@@ -6,7 +6,7 @@
 //  Copyright © 2018 沈宸. All rights reserved.
 //
 
-#import <libscutils/libscutils.h>
+#import <UIKit/UIKit.h>
 #import "SCUtility.h"
 
 NS_ASSUME_NONNULL_BEGIN

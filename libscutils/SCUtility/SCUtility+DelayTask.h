@@ -5,8 +5,7 @@
 //  Created by 沈宸 on 2018/12/7.
 //  Copyright © 2018 沈宸. All rights reserved.
 //
-
-#import <libscutils/libscutils.h>
+#import <Foundation/Foundation.h>
 #import "SCUtility.h"
 
 NS_ASSUME_NONNULL_BEGIN
