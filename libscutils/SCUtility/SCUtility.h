@@ -15,6 +15,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 @interface SCUtility : NSObject
+
++ (instancetype) new __attribute__((unavailable("call sharedInstance instead")));
+- (instancetype) copy __attribute__((unavailable("call sharedInstance instead")));
+- (instancetype) mutableCopy __attribute__((unavailable("call sharedInstance instead")));
+
+
 /**
  返回全局的SCUtility的单例
  

@@ -8,14 +8,27 @@
 
 #import "SCUtility.h"
 
+static SCUtility *__utility = nil;
+
 @implementation SCUtility
++ (void)initialize{
+    [self sharedInstance];
+}
+
+// 重写alloc方法，保证单例
++ (instancetype)alloc{
+    if (__utility) {
+        return __utility;
+    }
+    return [super alloc];
+}
+
 + (instancetype)sharedInstance{
-    static SCUtility *utility = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        utility = [[self alloc] init];
+        __utility = [[self alloc] init];
     });
-    return utility;
+    return __utility;
 }
 
 - (UIImage *)sc_imageWithColor:(UIColor *) color

@@ -131,14 +131,7 @@
 				3E2EF84621B8D0E200CA85ED /* PrefixHeader.pch */,
 				3E2EF84421B8C77C00CA85ED /* SCCommonMacros.h */,
 				3E14AC9A21B9FDA800BE7DE2 /* SCUtility */,
-				3E8B93BA21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h */,
-				3E8B93BB21B8F5FA00673862 /* NSTimer+SCUnretainTimer.m */,
-				3E8B93BE21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.h */,
-				3E8B93BF21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.m */,
-				3E8B93C321B8FB7800673862 /* UIScrollView+UITouch.h */,
-				3E8B93C221B8FB7800673862 /* UIScrollView+UITouch.m */,
-				3E2AA87121BE135D009985BF /* UITextField+PlaceHolder.h */,
-				3E2AA87221BE135D009985BF /* UITextField+PlaceHolder.m */,
+				3EB0F46521D4B8AA009C0CE2 /* Category */,
 				3E2EF82A21B8C4EF00CA85ED /* Info.plist */,
 			);
 			path = libscutils;
@@ -151,6 +144,21 @@
 				3E2EF83621B8C4EF00CA85ED /* Info.plist */,
 			);
 			path = libscutilsTests;
+			sourceTree = "<group>";
+		};
+		3EB0F46521D4B8AA009C0CE2 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B93BA21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h */,
+				3E8B93BB21B8F5FA00673862 /* NSTimer+SCUnretainTimer.m */,
+				3E8B93BE21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.h */,
+				3E8B93BF21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.m */,
+				3E8B93C321B8FB7800673862 /* UIScrollView+UITouch.h */,
+				3E8B93C221B8FB7800673862 /* UIScrollView+UITouch.m */,
+				3E2AA87121BE135D009985BF /* UITextField+PlaceHolder.h */,
+				3E2AA87221BE135D009985BF /* UITextField+PlaceHolder.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
