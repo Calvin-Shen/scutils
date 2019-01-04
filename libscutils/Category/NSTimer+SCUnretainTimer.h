@@ -9,7 +9,7 @@
 
 @interface NSTimer (SCUnretainTimer)
 /**
- 创建一个不使用target模式的timer，不会导致循环引用
+ 创建一个不使用target模式的timer，不会导致循环引用,没有系统限制要求
  
  @param interval 以s计算
  @param repeats 是否循环

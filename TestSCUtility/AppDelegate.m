@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <libscutils/libscutils.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+//    UINavigationBar *bar = [UINavigationBar appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class]]];
+//    UINavigationBar *bar = [UINavigationBar appearance];
+//    [bar setBarTintColor:SCRGBColor(255, 0, 0)];
+//    [bar setTintColor:SCRGBColor(255, 0, 0)];
+//    [bar setShadowImage:[UIImage new]];
+//    [bar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     return YES;
 }
 

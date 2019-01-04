@@ -7,18 +7,28 @@
 //
 
 #import "ViewController.h"
-#import "libscutils.h"
+#import <libscutils/libscutils.h>
+
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImage *image = [SCUtils sc_imageWithColor:SCRGBColor(255, 0, 0)];
-    SCLog(@"imageSize:%@",NSStringFromCGSize(image.size));
+    
 }
 
+- (BOOL)navigationShouldPopOnBackButton{
+    return YES;
+}
 
+- (void)viewControllerShouldPopUpOnNavigationItem:(UINavigationItem *)item{
+    SCLog(@"Hello world");
+}
 @end

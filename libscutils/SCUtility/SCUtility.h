@@ -9,7 +9,7 @@
 /**
  获取SCUtility单例
  */
-#define SCUtils [SCUtility sharedInstance]
+#define scUtils [SCUtility sharedInstance]
 
 #import <UIKit/UIKit.h>
 
