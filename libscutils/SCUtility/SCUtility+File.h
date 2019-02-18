@@ -5,7 +5,7 @@
 //  Created by 沈宸 on 2018/12/7.
 //  Copyright © 2018 沈宸. All rights reserved.
 //
-#import <Foundation/Foundation.h>
+
 #import "SCUtility.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -36,7 +36,9 @@ NS_ASSUME_NONNULL_BEGIN
  @param fileType 文件类型
  @return 在指定文件夹生成的不重名的文件的路径，如果创建失败则返回nil
  */
-- (NSString *)createRandomFileAtPath:(NSString *)directoryPath prefix:(NSString *)prefix fileType:(NSString *)fileType;
+- (NSString *)createRandomFileAtPath:(NSString *)directoryPath
+                              prefix:(NSString *)prefix
+                            fileType:(NSString *)fileType;
 @end
 
 NS_ASSUME_NONNULL_END

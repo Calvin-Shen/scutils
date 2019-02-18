@@ -13,6 +13,8 @@
 		3E14AC9521B9FC8F00BE7DE2 /* SCUtility+DelayTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E14AC9321B9FC8F00BE7DE2 /* SCUtility+DelayTask.m */; };
 		3E14AC9821B9FD3900BE7DE2 /* SCUtility+File.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E14AC9621B9FD3900BE7DE2 /* SCUtility+File.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E14AC9921B9FD3900BE7DE2 /* SCUtility+File.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E14AC9721B9FD3900BE7DE2 /* SCUtility+File.m */; };
+		3E1BCD5B221A3F48006AF4E8 /* SCCoreDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E1BCD59221A3F47006AF4E8 /* SCCoreDataManager.h */; };
+		3E1BCD5C221A3F48006AF4E8 /* SCCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E1BCD5A221A3F47006AF4E8 /* SCCoreDataManager.m */; };
 		3E2AA86B21BDEFCB009985BF /* SCUtility+Animation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2AA86921BDEFCB009985BF /* SCUtility+Animation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E2AA86C21BDEFCB009985BF /* SCUtility+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2AA86A21BDEFCB009985BF /* SCUtility+Animation.m */; };
 		3E2AA87321BE135D009985BF /* UITextField+PlaceHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E2AA87121BE135D009985BF /* UITextField+PlaceHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +27,8 @@
 		3E39EF1D21DDFBA400CA261D /* UIViewController+NavigationBackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E39EF1B21DDFBA400CA261D /* UIViewController+NavigationBackButtonHandler.m */; };
 		3E39EF2021DE09BB00CA261D /* UINavigationController+BackButtonHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E39EF1E21DE09BB00CA261D /* UINavigationController+BackButtonHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E39EF2121DE09BB00CA261D /* UINavigationController+BackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E39EF1F21DE09BB00CA261D /* UINavigationController+BackButtonHandler.m */; };
+		3E88B69D21E2E16C00C953E4 /* SCUtility+String.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E88B69B21E2E16C00C953E4 /* SCUtility+String.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E88B69E21E2E16C00C953E4 /* SCUtility+String.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E88B69C21E2E16C00C953E4 /* SCUtility+String.m */; };
 		3E8B93BC21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8B93BA21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E8B93BD21B8F5FA00673862 /* NSTimer+SCUnretainTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B93BB21B8F5FA00673862 /* NSTimer+SCUnretainTimer.m */; };
 		3E8B93C021B8F9CC00673862 /* UIAlertController+TapGestureAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8B93BE21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -59,6 +63,8 @@
 		3E14AC9321B9FC8F00BE7DE2 /* SCUtility+DelayTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCUtility+DelayTask.m"; sourceTree = "<group>"; };
 		3E14AC9621B9FD3900BE7DE2 /* SCUtility+File.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCUtility+File.h"; sourceTree = "<group>"; };
 		3E14AC9721B9FD3900BE7DE2 /* SCUtility+File.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCUtility+File.m"; sourceTree = "<group>"; };
+		3E1BCD59221A3F47006AF4E8 /* SCCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCoreDataManager.h; sourceTree = "<group>"; };
+		3E1BCD5A221A3F47006AF4E8 /* SCCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCoreDataManager.m; sourceTree = "<group>"; };
 		3E2AA86921BDEFCB009985BF /* SCUtility+Animation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCUtility+Animation.h"; sourceTree = "<group>"; };
 		3E2AA86A21BDEFCB009985BF /* SCUtility+Animation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCUtility+Animation.m"; sourceTree = "<group>"; };
 		3E2AA87121BE135D009985BF /* UITextField+PlaceHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+PlaceHolder.h"; sourceTree = "<group>"; };
@@ -74,6 +80,8 @@
 		3E39EF1B21DDFBA400CA261D /* UIViewController+NavigationBackButtonHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationBackButtonHandler.m"; sourceTree = "<group>"; };
 		3E39EF1E21DE09BB00CA261D /* UINavigationController+BackButtonHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+BackButtonHandler.h"; sourceTree = "<group>"; };
 		3E39EF1F21DE09BB00CA261D /* UINavigationController+BackButtonHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+BackButtonHandler.m"; sourceTree = "<group>"; };
+		3E88B69B21E2E16C00C953E4 /* SCUtility+String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCUtility+String.h"; sourceTree = "<group>"; };
+		3E88B69C21E2E16C00C953E4 /* SCUtility+String.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SCUtility+String.m"; sourceTree = "<group>"; };
 		3E8B93BA21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+SCUnretainTimer.h"; sourceTree = "<group>"; };
 		3E8B93BB21B8F5FA00673862 /* NSTimer+SCUnretainTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+SCUnretainTimer.m"; sourceTree = "<group>"; };
 		3E8B93BE21B8F9CC00673862 /* UIAlertController+TapGestureAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+TapGestureAlertController.h"; sourceTree = "<group>"; };
@@ -126,6 +134,8 @@
 				3E14AC9721B9FD3900BE7DE2 /* SCUtility+File.m */,
 				3E14AC8E21B9FC4B00BE7DE2 /* SCUtility+UIView.h */,
 				3E14AC8F21B9FC4B00BE7DE2 /* SCUtility+UIView.m */,
+				3E88B69B21E2E16C00C953E4 /* SCUtility+String.h */,
+				3E88B69C21E2E16C00C953E4 /* SCUtility+String.m */,
 			);
 			path = SCUtility;
 			sourceTree = "<group>";
@@ -157,18 +167,11 @@
 				3E2EF84421B8C77C00CA85ED /* SCCommonMacros.h */,
 				3E14AC9A21B9FDA800BE7DE2 /* SCUtility */,
 				3EB0F46521D4B8AA009C0CE2 /* Category */,
-				3EAA419E21DC8E0E000B234A /* Inherit */,
+				3EF1C18322166DED009BE57F /* CoreData */,
 				3E2EF82A21B8C4EF00CA85ED /* Info.plist */,
 				3EB0F46621D4C064009C0CE2 /* README.md */,
 			);
 			path = libscutils;
-			sourceTree = "<group>";
-		};
-		3EAA419E21DC8E0E000B234A /* Inherit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Inherit;
 			sourceTree = "<group>";
 		};
 		3EB0F46521D4B8AA009C0CE2 /* Category */ = {
@@ -214,6 +217,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3EF1C18322166DED009BE57F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3E1BCD59221A3F47006AF4E8 /* SCCoreDataManager.h */,
+				3E1BCD5A221A3F47006AF4E8 /* SCCoreDataManager.m */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -227,12 +239,14 @@
 				3E14AC9421B9FC8F00BE7DE2 /* SCUtility+DelayTask.h in Headers */,
 				3E2AA86B21BDEFCB009985BF /* SCUtility+Animation.h in Headers */,
 				3E8B93BC21B8F5FA00673862 /* NSTimer+SCUnretainTimer.h in Headers */,
+				3E1BCD5B221A3F48006AF4E8 /* SCCoreDataManager.h in Headers */,
 				3E8B93C521B8FB7800673862 /* UIScrollView+UITouch.h in Headers */,
 				3E2AA87321BE135D009985BF /* UITextField+PlaceHolder.h in Headers */,
 				3E2EF84521B8C77C00CA85ED /* SCCommonMacros.h in Headers */,
 				3E2EF83721B8C4EF00CA85ED /* libscutils.h in Headers */,
 				3E39EF1C21DDFBA400CA261D /* UIViewController+NavigationBackButtonHandler.h in Headers */,
 				3E39EF2021DE09BB00CA261D /* UINavigationController+BackButtonHandler.h in Headers */,
+				3E88B69D21E2E16C00C953E4 /* SCUtility+String.h in Headers */,
 				3E2EF84221B8C53E00CA85ED /* SCUtility.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,8 +354,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E14AC9121B9FC4B00BE7DE2 /* SCUtility+UIView.m in Sources */,
+				3E88B69E21E2E16C00C953E4 /* SCUtility+String.m in Sources */,
 				3E2AA87421BE135D009985BF /* UITextField+PlaceHolder.m in Sources */,
 				3E14AC9521B9FC8F00BE7DE2 /* SCUtility+DelayTask.m in Sources */,
+				3E1BCD5C221A3F48006AF4E8 /* SCCoreDataManager.m in Sources */,
 				3E14AC9921B9FD3900BE7DE2 /* SCUtility+File.m in Sources */,
 				3E8B93C121B8F9CC00673862 /* UIAlertController+TapGestureAlertController.m in Sources */,
 				3E8B93C421B8FB7800673862 /* UIScrollView+UITouch.m in Sources */,
@@ -578,6 +594,7 @@
 				DEVELOPMENT_TEAM = 5865824T3V;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/$(TARGET_NAME)";
 				INFOPLIST_FILE = TestSCUtility/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -598,6 +615,7 @@
 				DEVELOPMENT_TEAM = 5865824T3V;
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/$(TARGET_NAME)";
 				INFOPLIST_FILE = TestSCUtility/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

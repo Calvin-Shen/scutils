@@ -17,7 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param color placeholder的字体颜色
  @param size placeholder的字体大小
  */
-- (void)sc_setPlaceHolderFontColor:(UIColor *)color fontSize:(float)size;
+- (void)sc_setPlaceHolderFontColor:(UIColor *)color
+                          fontSize:(float)size;
 @end
 
 NS_ASSUME_NONNULL_END

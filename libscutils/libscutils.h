@@ -14,6 +14,7 @@
 #import "SCUtility+DelayTask.h"
 #import "SCUtility+File.h"
 #import "SCUtility+UIView.h"
+#import "SCUtility+String.h"
 
 // Category
 #import "NSTimer+SCUnretainTimer.h"

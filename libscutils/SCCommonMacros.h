@@ -18,7 +18,7 @@
 /**
  获取导航栏高度
  */
-#define NAV_HEIGHT           [UIApplication sharedApplication].statusBarFrame.size.height + 44
+#define NAVI_HEIGHT           [UIApplication sharedApplication].statusBarFrame.size.height + 44
 
 /**
  获取当前屏幕相对于inphone6的宽高比
@@ -59,5 +59,11 @@
  获取系统版本
  */
 #define kSystemVersion [UIDevice currentDevice].systemVersion.doubleValue
+
+
+/**
+ 判断字符串是否为空
+ */
+#define SCStrIsEmpty(str) ((str == nil) || ([str isEqualToString:@""]) || (str == NULL) || ([str isKindOfClass:[NSNull class]]))
 
 #endif /* SCCommonMacros_h */

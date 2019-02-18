@@ -16,5 +16,7 @@
  @param block 希望循环执行的内容
  @return 定时器对象
  */
-+ (NSTimer *)sc_scheduledTimerWithInterval:(NSTimeInterval)interval repeats:(BOOL)repeats block:(void (^)(NSTimer *timer))block;
++ (NSTimer *)sc_scheduledTimerWithInterval:(NSTimeInterval)interval
+                                   repeats:(BOOL)repeats
+                                     block:(void (^)(NSTimer *timer))block;
 @end

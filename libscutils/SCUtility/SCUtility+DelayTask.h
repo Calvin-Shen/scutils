@@ -5,7 +5,6 @@
 //  Created by 沈宸 on 2018/12/7.
 //  Copyright © 2018 沈宸. All rights reserved.
 //
-#import <Foundation/Foundation.h>
 #import "SCUtility.h"
 
 NS_ASSUME_NONNULL_BEGIN
@@ -17,7 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
  @param block 需要延时执行的任务内容
  @return 返回一个延时执行的句柄
  */
-- (dispatch_block_t)sc_performBlock:(dispatch_block_t)block delayMilliSeconds:(NSUInteger)delayMilliSeconds;
+- (dispatch_block_t)sc_performBlock:(dispatch_block_t)block
+                  delayMilliSeconds:(NSUInteger)delayMilliSeconds;
 
 /**
  取消延时任务
