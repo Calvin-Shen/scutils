@@ -21,6 +21,10 @@
 #import "UIAlertController+TapGestureAlertController.h"
 #import "UITextField+PlaceHolder.h"
 #import "UIViewController+NavigationBackButtonHandler.h"
+#import "NSString+MD5.h"
+
+// CoreData
+#import "SCCoreDataManager.h"
 
 // Inherit
 

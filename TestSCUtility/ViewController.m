@@ -17,6 +17,9 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     
+    NSString *str = @"Hello World";
+    NSString *mdStr2 = [str md5HashToLower16Bit];
+    NSString *md5Str = [str md5HashToLower32Bit];
 }
 
 - (void)viewDidLoad {

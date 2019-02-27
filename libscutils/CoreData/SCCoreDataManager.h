@@ -8,6 +8,8 @@
 
 /*
  CoreData管理类，应用此类工程中的.xcdatamodeld文件名必须为SCCoreData.xcdatamodeld
+ 
+ 如果改变.xcdatamodeld文件的结构，必须删除沙盒的CoreData文件夹，不然会报'NSPersistentStoreCoordinator has no persistent stores'的错误。
  */
 
 #import <Foundation/Foundation.h>
