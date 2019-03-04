@@ -23,6 +23,14 @@
 //    [bar setTintColor:SCRGBColor(255, 0, 0)];
 //    [bar setShadowImage:[UIImage new]];
 //    [bar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+#if DEBUG
+    // iOS
+    [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection10.bundle"] load];
+    // tvOS
+    //[[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/tvOSInjection10.bundle"] load];
+    // macOS
+    //[[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/macOSInjection10.bundle"] load];
+#endif
     return YES;
 }
 

@@ -23,21 +23,21 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)md5HashToLower32Bit;
 
 /**
- 将字符串转换为大写的32位MD5hash值
+ 将字符串转换为大写的32位MD5的hash值
  
  @return 32位hash值
  */
 - (NSString *)md5HashToUpper32Bit;
 
 /**
- 将字符串转换为小写的16位MD5hash值
+ 将字符串转换为小写的16位MD5的hash值
  
  @return 16位hash值
  */
 - (NSString *)md5HashToLower16Bit;
 
 /**
- 将字符串转换为大写的16位MD5hash值
+ 将字符串转换为大写的16位MD5的hash值
  
  @return 16位hash值
  */

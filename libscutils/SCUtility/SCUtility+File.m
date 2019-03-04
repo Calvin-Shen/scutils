@@ -41,9 +41,14 @@
     BOOL isDir;
     if([fileManager fileExistsAtPath:directoryPath isDirectory:&isDir] && isDir){
         NSString *fileName = [[prefix stringByAppendingString:@"-XXXXXX"] stringByAppendingPathExtension:fileType];
-        NSString *tempFileTemplate = [directoryPath
-                                      stringByAppendingPathComponent:fileName];
-        int fileDescriptor = mkstemps(tempFileTemplate.UTF8String, 4);
+        NSString *filePath = [directoryPath stringByAppendingPathComponent:fileName];
+        size_t len = strlen(fileType.UTF8String);
+        size_t lenTotal = strlen(filePath.UTF8String);
+        char c_FileName[lenTotal];
+        char *begin = strcpy(c_FileName, filePath.UTF8String);
+        int fileDescriptor = mkstemps(begin, (int)(len + 1));
+        assert(fileDescriptor != -1);
+        NSString *tempFileTemplate = [NSString stringWithUTF8String:begin];
         return tempFileTemplate;
     }else{
         return nil;
