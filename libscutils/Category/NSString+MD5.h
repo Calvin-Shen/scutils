@@ -44,4 +44,16 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)md5HashToUpper16Bit;
 @end
 
+
+
+@interface NSString (CalculateSize)
+/**
+ 计算当前字符串的size大小
+ 
+ @param font 该字符串的字体
+ @return 该字符串的size大小
+ */
+- (CGSize)sc_calculateWidthWithFont:(UIFont *)font;
+@end
+
 NS_ASSUME_NONNULL_END

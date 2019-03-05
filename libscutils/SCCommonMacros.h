@@ -60,10 +60,32 @@
  */
 #define kSystemVersion [UIDevice currentDevice].systemVersion.doubleValue
 
+/**
+ 获取APP版本号
+ */
+#define kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+/**
+ 获取当前语言
+ */
+#define kCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
 
 /**
  判断字符串是否为空
  */
 #define SCStrIsEmpty(str) ((str == nil) || ([str isEqualToString:@""]) || (str == NULL) || ([str isKindOfClass:[NSNull class]]))
+
+
+/**
+ 判断当前屏幕是否是竖屏
+ */
+#define IsPortrait ([[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortrait || [[UIApplication sharedApplication] statusBarOrientation] == UIInterfaceOrientationPortraitUpsideDown)
+
+/**
+ 获取一段持续时间
+ */
+#define kStartTime CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();
+#define kEndTime   SCLog(@"Time: %f", CFAbsoluteTimeGetCurrent() - start)
+
 
 #endif /* SCCommonMacros_h */
