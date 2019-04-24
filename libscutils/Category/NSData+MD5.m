@@ -10,7 +10,8 @@
 #import <CommonCrypto/CommonCrypto.h>
 
 @implementation NSData (MD5)
-- (NSString *)md5HashToLower32Bit;{
+- (NSString *)md5HashToLower32Bit;
+{
     //1: 创建一个MD5对象
     CC_MD5_CTX md5;
     //2: 初始化MD5
@@ -23,13 +24,15 @@
     CC_MD5_Final(result, &md5);
     NSMutableString *resultString = [NSMutableString string];
     //6:从result数组中获取最终结果
-    for (int i = 0; i < CC_MD5_DIGEST_LENGTH * 2; i++) {
+    for (int i = 0; i < CC_MD5_DIGEST_LENGTH * 2; i++)
+    {
         [resultString appendFormat:@"%02x", result[i]];
     }
     return resultString;
 }
 
-- (NSString *)md5HashToUpper32Bit{
+- (NSString *)md5HashToUpper32Bit
+{
     //1: 创建一个MD5对象
     CC_MD5_CTX md5;
     //2: 初始化MD5
@@ -42,13 +45,15 @@
     CC_MD5_Final(result, &md5);
     NSMutableString *resultString = [NSMutableString string];
     //6:从result数组中获取最终结果
-    for (int i = 0; i < CC_MD5_DIGEST_LENGTH * 2; i++) {
+    for (int i = 0; i < CC_MD5_DIGEST_LENGTH * 2; i++)
+    {
         [resultString appendFormat:@"%02X", result[i]];
     }
     return resultString;
 }
 
-- (NSString *)md5HashToLower16Bit{
+- (NSString *)md5HashToLower16Bit
+{
     //1: 创建一个MD5对象
     CC_MD5_CTX md5;
     //2: 初始化MD5
@@ -61,13 +66,15 @@
     CC_MD5_Final(result, &md5);
     NSMutableString *resultString = [NSMutableString string];
     //6:从result数组中获取最终结果
-    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+    for (int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
+    {
         [resultString appendFormat:@"%02x", result[i]];
     }
     return resultString;
 }
 
-- (NSString *)md5HashToUpper16Bit{
+- (NSString *)md5HashToUpper16Bit
+{
     //1: 创建一个MD5对象
     CC_MD5_CTX md5;
     //2: 初始化MD5

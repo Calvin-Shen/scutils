@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 /**
- 自定义NavigationBar的backButtonImage，并且设置title为空，点击返回按钮如果需要执行其他操作，需要在ViewController里面自定义实现- (void)viewControllerShouldPopUpOnNavigationItem:(UINavigationItem *)item方法;
+ 自定义NavigationBar的backButtonImage，并且设置title为空，点击返回按钮如果需要执行其他操作，需要在ViewController里面自定义实现- (void)viewControllerShouldPopUpOnNavigationItem:(UINavigationItem *)item方法 以及 - (BOOL)navigationShouldPopOnBackButton方法;
 */
 @interface UINavigationController (BackButtonHandler)
 

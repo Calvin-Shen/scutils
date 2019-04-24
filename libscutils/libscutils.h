@@ -21,6 +21,7 @@
 #import "UITextField+PlaceHolder.h"
 #import "UIViewController+NavigationBackButtonHandler.h"
 #import "NSString+MD5.h"
+#import "NSData+MD5.h"
 
 // CoreData
 #import "SCCoreDataManager.h"
