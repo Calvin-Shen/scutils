@@ -9,7 +9,8 @@
 #import "UITextField+PlaceHolder.h"
 
 @implementation UITextField (PlaceHolder)
-- (void)sc_setPlaceHolderFontColor:(UIColor *)color fontSize:(float)size{
+- (void)sc_setPlaceHolderFontColor:(UIColor *)color fontSize:(float)size
+{
     [self setValue:color forKeyPath:@"_placeholderLabel.textColor"];
     [self setValue:[UIFont boldSystemFontOfSize:size] forKeyPath:@"_placeholderLabel.font"];
 }

@@ -11,27 +11,31 @@
 static SCUtility *__utility = nil;
 
 @implementation SCUtility
-+ (void)initialize{
++ (void)initialize
+{
     [self sharedInstance];
 }
 
 // 重写alloc方法，保证单例
-+ (instancetype)alloc{
-    if (__utility) {
++ (instancetype)alloc
+{
+    if (__utility)
+    {
         return __utility;
     }
     return [super alloc];
 }
 
-+ (instancetype)sharedInstance{
++ (instancetype)sharedInstance
+{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        __utility = [[self alloc] init];
+      __utility = [[self alloc] init];
     });
     return __utility;
 }
 
-- (UIImage *)sc_imageWithColor:(UIColor *) color
+- (UIImage *)sc_imageWithColor:(UIColor *)color
 {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
@@ -43,17 +47,22 @@ static SCUtility *__utility = nil;
     return theImage;
 }
 
-- (void)sc_resetUserDefaults{
+- (void)sc_resetUserDefaults
+{
     NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
     [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
 }
 
-- (void)sc_goToAppStoreScoreWithId:(NSString *)idString{
+- (void)sc_goToAppStoreScoreWithId:(NSString *)idString
+{
     NSString *urlString = [@"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=" stringByAppendingString:idString];
-    NSURL *url = [NSURL URLWithString:urlString];
-    if(kSystemVersion >= 10.0){
+    NSURL *   url       = [NSURL URLWithString:urlString];
+    if (kSystemVersion >= 10.0)
+    {
         [[UIApplication sharedApplication] openURL:url options:@{} completionHandler:nil];
-    }else{
+    }
+    else
+    {
         [[UIApplication sharedApplication] openURL:url];
     }
 }

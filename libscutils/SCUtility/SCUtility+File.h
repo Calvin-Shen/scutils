@@ -27,7 +27,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSString *)sc_fileSizeWithByteCounts:(NSInteger)byteCounts;
 
-
 /**
  在指定的文件夹下，根据传入的前缀和文件类型，生成一个文件，文件名称的格式为 "prefix-XXXXXX.fileType",其中XXXXXX是一串不重复的随机数
 

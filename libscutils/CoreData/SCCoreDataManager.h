@@ -25,7 +25,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (instancetype)shareInstance;
 
-
 /**
  销毁数据库
  */
@@ -54,9 +53,9 @@ NS_ASSUME_NONNULL_BEGIN
  @param attribute 属性名称
  @return 成功或者失败
  */
-+ (BOOL)deleteByEntityName:(NSString * _Nonnull)entityName
-               WithMaching:(NSString * _Nonnull)searchString
-             WithAttribute:(NSString * _Nonnull)attribute;
++ (BOOL)deleteByEntityName:(NSString *_Nonnull)entityName
+               WithMaching:(NSString *_Nonnull)searchString
+             WithAttribute:(NSString *_Nonnull)attribute;
 
 /**
  更新数据

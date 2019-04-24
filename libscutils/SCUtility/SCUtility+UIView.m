@@ -9,14 +9,15 @@
 #import "SCUtility+UIView.h"
 
 @implementation SCUtility (UIView)
-- (void)sc_hideHairLineOfNavigationBar:(UINavigationBar *)naviBar{
+- (void)sc_hideHairLineOfNavigationBar:(UINavigationBar *)naviBar
+{
     naviBar.shadowImage = [UIImage new];
 }
 
 - (UIViewController *)sc_viewControllerOfView:(UIView *)view
 {
     UIViewController *viewController = nil;
-    UIResponder *next = view.nextResponder;
+    UIResponder *     next           = view.nextResponder;
     while (next)
     {
         if ([next isKindOfClass:[UIViewController class]])
@@ -32,7 +33,7 @@
 - (void)sc_setStatusBarBackgroundColor:(UIColor *)color
 {
     UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
-    
+
     if ([statusBar respondsToSelector:@selector(setBackgroundColor:)])
     {
         statusBar.backgroundColor = color;

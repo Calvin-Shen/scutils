@@ -36,7 +36,7 @@
 + (instancetype)shareInstance
 {
     static SCCoreDataManager *manager = nil;
-    static dispatch_once_t onceToken;
+    static dispatch_once_t    onceToken;
     dispatch_once(&onceToken, ^{
       manager = [SCCoreDataManager new];
     });
@@ -52,7 +52,7 @@
         NSString *path =
             [[NSBundle mainBundle] pathForResource:@"SCCoreData"
                                             ofType:@"momd"];
-        NSURL *url = [NSURL URLWithString:path];
+        NSURL *url   = [NSURL URLWithString:path];
         _objectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:url];
         // 创建持久化数据协调器
         _coordinator = [[NSPersistentStoreCoordinator alloc]
@@ -153,7 +153,7 @@
             [[NSSortDescriptor alloc] initWithKey:sortAttribute
                                         ascending:ascending
                                          selector:nil];
-        NSArray *descriptors = @[ sortDescriptor ];
+        NSArray *descriptors         = @[ sortDescriptor ];
         fetchRequest.sortDescriptors = descriptors;
     }
     else
@@ -172,7 +172,7 @@
             [NSPredicate predicateWithFormat:@"%K == %@", attribute, searchString];
     }
 
-    NSError *error = nil;
+    NSError *                   error = nil;
     NSFetchedResultsController *fetchdController =
         [[NSFetchedResultsController alloc]
             initWithFetchRequest:fetchRequest

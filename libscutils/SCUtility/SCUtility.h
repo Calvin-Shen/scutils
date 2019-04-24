@@ -17,9 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SCUtility : NSObject
 
 + (instancetype) new __attribute__((unavailable("call sharedInstance instead")));
-- (instancetype) copy __attribute__((unavailable("call sharedInstance instead")));
-- (instancetype) mutableCopy __attribute__((unavailable("call sharedInstance instead")));
-
+- (instancetype)copy __attribute__((unavailable("call sharedInstance instead")));
+- (instancetype)mutableCopy __attribute__((unavailable("call sharedInstance instead")));
 
 /**
  返回全局的SCUtility的单例
@@ -34,13 +33,12 @@ NS_ASSUME_NONNULL_BEGIN
  @param color 指定的颜色
  @return 一个以color为颜色的图片，大小为1个像素
  */
-- (UIImage *)sc_imageWithColor:(UIColor *) color;
+- (UIImage *)sc_imageWithColor:(UIColor *)color;
 
 /**
  删除NSUserDefaults中的所有记录
  */
 - (void)sc_resetUserDefaults;
-
 
 /**
  跳转到app store的下载应用评分页面
